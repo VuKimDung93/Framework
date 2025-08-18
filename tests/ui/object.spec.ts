@@ -100,8 +100,6 @@ test ('Edit Object', async ({page}) => {
         await newTab.getByRole('textbox', { name: 'Display Name' }).fill('object test edit');
         await newTab.getByRole('textbox', { name: 'Record Name' }).fill('object test 2');
         await newTab.getByRole('textbox', { name: 'Description' }).fill('Object for test automation edit');
-        //await newTab.getByRole('searchbox', { name: 'Tags' }).click();
-        //await newTab.getByText('TagsPayment').click();
         await newTab.getByText('Payment Reconciliation').click();
         await newTab.getByText('Video call', { exact: true }).click();
         await newTab.getByRole('searchbox', { name: 'Tags' }).click();
